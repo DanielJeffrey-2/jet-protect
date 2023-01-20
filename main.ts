@@ -122,6 +122,7 @@ true
 )
 // Once the score reaches 20, enemy projectiles will start to spawn, and will track onto your sprite.
 forever(function () {
+    music.playMelody("C5 G B A F A C5 B ", 375)
     while (info.score() > 20) {
         projectile2 = sprites.create(img`
             . . . . 2 4 5 5 5 5 5 4 2 . . . 
